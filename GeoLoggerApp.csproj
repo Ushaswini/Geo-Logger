@@ -101,8 +101,8 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GeoLoggerService.cs" />
-    <Compile Include="SQLite\DataStore.cs" />
-    <Compile Include="SQLite\GeoLocation.cs" />
+    <Compile Include="DataService\DataStore.cs" />
+    <Compile Include="DataService\GeoLocation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

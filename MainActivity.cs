@@ -1,5 +1,4 @@
 ﻿using Android.App;
-using Android.Widget;
 using Android.Views;
 using Android.OS;
 using Android.Content;
@@ -8,7 +7,6 @@ using GeoLoggerApp.Adapters;
 using System.Collections.Generic;
 using GeoLoggerApp.SQLite;
 using Android.Support.V7.Widget;
-using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
@@ -21,7 +19,7 @@ namespace GeoLoggerApp
         RecyclerView.LayoutManager mLayoutManager;        
         GeoLocationsAdapter mAdapter;        
         List<GeoLocation> locations;
-        const int INTERVAL = 60000; //5 sec
+        const int INTERVAL = 300000; //5 min
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

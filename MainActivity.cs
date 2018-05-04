@@ -30,6 +30,12 @@ namespace GeoLoggerApp
             ScheduleAlarm();
         }
 
+        protected override void OnResume()
+        {
+            base.OnResume();
+            RefreshData();
+        }
+
         private void Init()
         {
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
